@@ -42,7 +42,7 @@ But both of them didn't know swimming.
 _______________________________
 They decided to find a solution.
 ________________________________
-Txtweb app contacs his friend Jinu Joseph Daniel
+Txtweb app contacts his friend Jinu Joseph Daniel
 who is an engineering student
 
 Dude I need a solution to cross the river         
@@ -56,7 +56,7 @@ _________________________________
 
 On the next day Jinu made a  very romantic bridge across the river
 
-wow this's really awesome man  
+wow! this's really awesome man  
 \
 o      [^]
 {|| \ .      ||
