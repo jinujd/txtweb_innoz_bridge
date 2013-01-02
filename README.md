@@ -1,4 +1,3 @@
-
 Installation:
 
 Make sure that 'allow_url_fopen' is set to 'On' in the php.ini of the server where the app is actually implemented  
@@ -21,8 +20,8 @@ For innoz app
 Put the this file in your server
 ------------------------------Steps common to both platforms------------------------------------
 App URL for innoz : Give the url of bridge.php
-App URL for txtweb: Give the url as url to bridge.php?app=<appname> (ex: for app named ire  hosted at
-                                                                                           mydomain.com mydomain.com/bridge.php?app=ire) 
+App URL for txtweb: Give the url as url to bridge.php?app=<appname> 
+(ex: for app named ire  hosted at mydomain.com mydomain.com/bridge.php?app=ire) 
 ----------------------------------------------------------------------
 Create an apps.xml file in the  same directory as that of bridge.php
 Under the root tag named apps,
@@ -35,6 +34,6 @@ Sample xml file
  -----------------
 <?xml version="1.0" encoding="ISO-8859-1"?>
 <apps>
-    <TxtwebApp_surveys key='23232-3ewe-23er2-23dw'>http://jinujd.0fees.net/poll/index.php</TxtwebApp_surveys>
+    <TxtwebApp_surveys key='2323sdsd2-3esdwe-23er2-23dw'>http://a.in/index.php</TxtwebApp_surveys>
     <InnozApp_23ert-er3w-23ee-3err>http://www.mydomain.com/ire.php</InnozApp_23ert-er3w-23ee-3err>
 </apps>
