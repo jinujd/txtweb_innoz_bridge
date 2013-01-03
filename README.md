@@ -1,4 +1,3 @@
-
 Installation:
 For txtweb app 
 -------------------
@@ -21,7 +20,7 @@ Put the this file in your server
 ------------------------------Steps common to both platforms------------------------------------
 App URL for innoz : Give the url of bridge.php
 App URL for txtweb: Give the url as url to bridge.php?app=<appname> (ex: for app named ire  hosted at
-                                                                                           mydomain.com mydomain.com/bridge.php?app=ire) 
+After URL verification by txtweb,replace bridge.php with ,bridge.php given  at https://github.com/jinujd/txtweb_innoz_bridge                                                                                     mydomain.com mydomain.com/bridge.php?app=ire) 
  																					   (You must complete step 1 before this)
 ----------------------------------------------------------------------
 Create an apps.xml file in the  same directory as that of bridge.php(this file)
