@@ -19,7 +19,7 @@ from 55444 met  each other .
 
 They were at opposite banks of a river..
 
-o                                   /o\
+ o                                   /o\
 {||  '`'`'`'`'`'`'`'`'`'`'`'`'`'`'`' ||}
 |\                                  / |
 Hello sweet                   Oh boy!,
@@ -46,7 +46,7 @@ who is an engineering student
 
 Dude I need a solution to cross the river         
 /     		   
- o     [^]
+  o    [^]
 {||\ . /||}
  |\.  ./ \.
             \ 
