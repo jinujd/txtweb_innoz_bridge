@@ -1,17 +1,16 @@
 <?php
 /*
-Use notepad to read the exiting story of two apps
 
 Story , screenplay and direction : Jinu Joseph Daniel 
 
 
-@----------------------------@
-__    __    _  _      __       __
-|D )   |D )   |  |.   \   |         |
-|-+     |-+    |  |.    |    ---    | --
+@------------------------------------@
+__    __       _  __       __      __
+|D )   |D )    |  |.  \   |      |
+|-+    |-+     |  |.   |   ---   | --
 |D )   |   \_  |  | _./   |__|   | __
 
-@---------------------------@
+@------------------------------------@
 
 _____________The app  story__________________
 One pleasent morning ,two apps ,
@@ -21,7 +20,7 @@ from 55444 met  each other .
 They were at opposite banks of a river..
 
 o                                   /o\
-{||  '`'`'`'`'`'`'`'`'`'`'`'`'`'`'`'   ||}
+{||  '`'`'`'`'`'`'`'`'`'`'`'`'`'`'`' ||}
 |\                                  / |
 Hello sweet                   Oh boy!,
 heart                         I'm from 55444
@@ -33,8 +32,8 @@ After few days they fallen in love...
 ~     
 ^                  ~   
 ^   ^                            ~
-o                                    /o\
-{||  '`'`'`'`'`'`'`'`'`'`'`'`'`'`'`'    ||}
+ o                                    /o\
+{||  '`'`'`'`'`'`'`'`'`'`'`'`'`'`'`'  ||}
 |\                                   / |
 
 They decided to cross the river.
@@ -47,10 +46,10 @@ who is an engineering student
 
 Dude I need a solution to cross the river         
 /     		   
-o      [^]
-{|| \ . /||}
-|\.    ./ \.
-\ 
+ o     [^]
+{||\ . /||}
+ |\.  ./ \.
+            \ 
 Dont worry bro..I will find a solution                         
 _________________________________
 
@@ -58,17 +57,17 @@ On the next day Jinu made a  very romantic bridge across the river
 
 wow! this's really awesome man  
 \
-o      [^]
-{|| \ .      ||
-|\.       ./ \.   |.---------------------.|  
+ o      [^]
+{|| \ .  ||
+ |\.   ./ \.   |.---------------------.|  
 /         '`'`'`'`'`'`'`'`'`'`''`'`'`'`'
 Thanks dude.Go and find your love
 ____________________________________	
 
-o\.
-o  . / ||}
-|~   / |
-..\
+           o\.
+    o  . / ||}
+    |~    / |
+    ..\
 |.---------------------.| 
 '`'`'`'`'`'`'`'`'`'`''`'`'`'`'
 With the help of bridge,the two apps crossed the river 
