@@ -1,6 +1,11 @@
 <html>
 <head>
 </head>
+<style>
+body {
+	background:#ddd;
+}
+</style>
 <body>
 Installation:
 For txtweb app 
