@@ -338,7 +338,7 @@ class txtweb_innoz_bridge
                 $content = $content->item(0);
             }
             $text       = $content->nodeValue;
-            self::$text = $text;
+            self::$text = htmlspecialchars_decode($text);
         } else { //else the app might be implemented as HTML
             self::extractDataFromTxtwebFormat(); //else it will be same as txtweb app,except that,,there will be no <a> tags
         }
@@ -365,7 +365,7 @@ class txtweb_innoz_bridge
             $body = $body->item(0);
         }
         $text       = $body->nodeValue;
-        self::$text = $text;
+        self::$text = htmlspecialchars($text);
     }
     
     private function formatDataForTxtweb() //format data if the requested plaform is txtweb
