@@ -1,3 +1,7 @@
+<html>
+<head>
+</head>
+<body>
 Installation:
 For txtweb app 
 -------------------
@@ -47,3 +51,5 @@ Sample xml file
 
 NOTE:
 Make sure that 'allow_url_fopen' is set to 'On' in the php.ini of the server where the app is actually implemented  
+</body>
+</html>
