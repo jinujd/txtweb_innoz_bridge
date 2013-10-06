@@ -3,7 +3,7 @@
 </head>
 <style>
 body {
-	background:#ddd;
+	background:#000;
 }
 </style>
 <body>
