@@ -31,11 +31,17 @@
     <!-- MAIN CONTENT -->
     <div id="main_content_wrap" class="outer">
       <section id="main_content" class="inner">
-        <p><strong># Installation:</strong>
-<strong>For txtweb app **
-**-------------------</strong></p>
+        <h1>
+<a name="installation" class="anchor" href="#installation"><span class="octicon octicon-link"></span></a><strong>Installation:</strong>
+</h1>
 
-<hr><p><em><strong>step 1)</strong></em>
+<h2>
+<a name="for-txtweb-app-" class="anchor" href="#for-txtweb-app-"><span class="octicon octicon-link"></span></a>**For txtweb app **</h2>
+
+<h2>
+<a name="-------------------" class="anchor" href="#-------------------"><span class="octicon octicon-link"></span></a>-------------------</h2>
+
+<hr><p>step 1)
 create a file named,bridge.php in your server and
 Put the  code 
 "
@@ -45,8 +51,7 @@ Put the  code
         https://github.com/jinujd/txtweb_innoz_bridge                                                                                     mydomain.com mydomain.com/bridge.php?app=ire) 
 
 <h2>
-<a name="---------------------------------------------------------------------------------------you-must-complete-step-1-before-this" class="anchor" href="#---------------------------------------------------------------------------------------you-must-complete-step-1-before-this"><span class="octicon octicon-link"></span></a>                                                                                       <em><strong>(You must complete step 1 before this)</strong></em>
-</h2>
+<a name="---------------------------------------------------------------------------------------you-must-complete-step-1-before-this" class="anchor" href="#---------------------------------------------------------------------------------------you-must-complete-step-1-before-this"><span class="octicon octicon-link"></span></a>                                                                                       (You must complete step 1 before this)</h2>
 
 <p>Create an apps.xml file in the  same directory as that of bridge.php(this file)
 Under the root tag named apps,
@@ -59,9 +64,13 @@ Under the root tag named apps,
   The output produced by this URL will be the ourtput of new app.
   This is useful when you need to prepare the app output before conversion,like changing txtweb number written in app response to that of innoz platform.
 <em><strong>Sample xml file</strong></em>
- <em><strong>-----------------</strong></em>
- &lt;?xml version="1.0" encoding="ISO-8859-1"?&gt;
-<a href="http://myTxtwebApp1.com/index.php">http://myTxtwebApp1.com/index.php</a><a href="http://myTxtwebApp2.com/index.php">http://myTxtwebApp2.com/index.php</a><a href="http://www.myInnozApp1.com/index.php">http://www.myInnozApp1.com/index.php</a><a href="http://www.myInnozApp2.com/index.php">http://www.myInnozApp2.com/index.php</a></p>
+ <em><strong>-----------------</strong></em><code>&lt;?xml version="1.0" encoding="ISO-8859-1"?&gt;
+&lt;apps&gt;
+    &lt;TxtwebApp_vote4 prepareURL = 'http://www.myUrl.com.prepare.php' key='3434-34343434-34343434-3434k34'&gt;http://myTxtwebApp1.com/index.php&lt;/TxtwebApp_vote4 &gt;
+    &lt;TxtwebApp_vote4 key='3434-34343434-34343434-3434k34d'&gt;http://myTxtwebApp2.com/index.php&lt;/TxtwebApp_vote4 &gt;
+    &lt;InnozApp_dabcdddde6ff0853e8e84ca1845e127a&gt;http://www.myInnozApp1.com/index.php&lt;/InnozApp_dabcdddde6ff0853e8e84ca1845e127a&gt;
+    &lt;InnozApp_dabcdddde6ff0853e8e84ca1845e127w prepareURL = 'http://www.myUrl.com.prepare.php' &gt;http://www.myInnozApp2.com/index.php&lt;/InnozApp_dabcdddde6ff0853e8e84ca1845e127w&gt;
+&lt;/apps&gt;</code></p>
 
 <p>NOTE:
 Make sure that 'allow_url_fopen' is set to 'On' in the php.ini of the server where the app is actually implemented  </p>
