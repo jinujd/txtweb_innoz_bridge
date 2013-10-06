@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html>
+
+  <head>
+    <meta charset='utf-8' />
+    <meta http-equiv="X-UA-Compatible" content="chrome=1" />
+    <meta name="description" content="Txtweb innoz bridge : Bridge for converting txtweb app to innoz(55444) app and vice versa" />
+
+    <link rel="stylesheet" type="text/css" media="screen" href="stylesheets/stylesheet.css">
+
+    <title>Txtweb innoz bridge</title>
+  </head>
+
+  <body>
+
+    <!-- HEADER -->
+    <div id="header_wrap" class="outer">
+        <header class="inner">
+          <a id="forkme_banner" href="https://github.com/jinujd/txtweb_innoz_bridge">View on GitHub</a>
+
+          <h1 id="project_title">Txtweb innoz bridge</h1>
+          <h2 id="project_tagline">Bridge for converting txtweb app to innoz(55444) app and vice versa</h2>
+
+            <section id="downloads">
+              <a class="zip_download_link" href="https://github.com/jinujd/txtweb_innoz_bridge/zipball/master">Download this project as a .zip file</a>
+              <a class="tar_download_link" href="https://github.com/jinujd/txtweb_innoz_bridge/tarball/master">Download this project as a tar.gz file</a>
+            </section>
+        </header>
+    </div>
+
+    <!-- MAIN CONTENT -->
+    <div id="main_content_wrap" class="outer">
+      <section id="main_content" class="inner">
+        <p><strong># Installation:</strong>
+<strong>For txtweb app **
+**-------------------</strong></p>
+
+<hr><p><em><strong>step 1)</strong></em>
+create a file named,bridge.php in your server and
+Put the  code 
+"
+&lt;!doctype html&gt;
+  
+    </p>
+        https://github.com/jinujd/txtweb_innoz_bridge                                                                                     mydomain.com mydomain.com/bridge.php?app=ire) 
+
+<h2>
+<a name="---------------------------------------------------------------------------------------you-must-complete-step-1-before-this" class="anchor" href="#---------------------------------------------------------------------------------------you-must-complete-step-1-before-this"><span class="octicon octicon-link"></span></a>                                                                                       <em><strong>(You must complete step 1 before this)</strong></em>
+</h2>
+
+<p>Create an apps.xml file in the  same directory as that of bridge.php(this file)
+Under the root tag named apps,
+1. For txtweb app corresponding to an innoz app ,the tag must start with TxtwebApp_ and the appname must follow
+2. For innoz app corresponding to a txtweb app, the tag must start with InnozApp_ and the  innoz app key must follow
+3.Give the link to the original implementation of the app ,as the value of the tag
+4.For txtweb apps specify the app key as an attribute named key
+5.You can specfiy an additional attribute called prepareURL ,whose value is a url.Before converting the app,
+  the result produced by original implementation of the app will be sent to this url as a GET parameter named 'appStream'.
+  The output produced by this URL will be the ourtput of new app.
+  This is useful when you need to prepare the app output before conversion,like changing txtweb number written in app response to that of innoz platform.
+<em><strong>Sample xml file</strong></em>
+ <em><strong>-----------------</strong></em>
+ &lt;?xml version="1.0" encoding="ISO-8859-1"?&gt;
+<a href="http://myTxtwebApp1.com/index.php">http://myTxtwebApp1.com/index.php</a><a href="http://myTxtwebApp2.com/index.php">http://myTxtwebApp2.com/index.php</a><a href="http://www.myInnozApp1.com/index.php">http://www.myInnozApp1.com/index.php</a><a href="http://www.myInnozApp2.com/index.php">http://www.myInnozApp2.com/index.php</a></p>
+
+<p>NOTE:
+Make sure that 'allow_url_fopen' is set to 'On' in the php.ini of the server where the app is actually implemented  </p>
+      </section>
+    </div>
+
+    <!-- FOOTER  -->
+    <div id="footer_wrap" class="outer">
+      <footer class="inner">
+        <p class="copyright">Txtweb innoz bridge maintained by <a href="https://github.com/jinujd">jinujd</a></p>
+        <p>Published with <a href="http://pages.github.com">GitHub Pages</a></p>
+      </footer>
+    </div>
+
+    
+
+  </body>
+</html>
