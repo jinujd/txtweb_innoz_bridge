@@ -11,7 +11,7 @@ Put the  code
         <meta name = "txtweb-appkey" content = "<your txtweb-appkey here>" />
     </head>
     <body></body>
-</html>"
+</html>"<br/>
 You must specify your txtweb app key as the value of content attribute of meta tag.
 
 For innoz app
