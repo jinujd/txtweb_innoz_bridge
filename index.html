@@ -36,44 +36,78 @@
 </h1>
 
 <h2>
-<a name="for-txtweb-app-" class="anchor" href="#for-txtweb-app-"><span class="octicon octicon-link"></span></a>**For txtweb app **</h2>
+<a name="for-txtweb-app" class="anchor" href="#for-txtweb-app"><span class="octicon octicon-link"></span></a>For txtweb app</h2>
+
+<hr><h2>
+<a name="-step-1" class="anchor" href="#-step-1"><span class="octicon octicon-link"></span></a>* step 1)</h2>
+
+<p>create a file named,bridge.php in your server and
+Put the  code </p>
+
+<p><code>&lt;!doctype html&gt;
+ &lt;html&gt; 
+    &lt;head&gt;
+        &lt;meta name = "txtweb-appkey" content = "&lt;your txtweb-appkey here&gt;" /&gt;
+    &lt;/head&gt;
+    &lt;body&gt;&lt;/body&gt;
+&lt;/html&gt;</code></p>
+
+<p><em>You must specify your txtweb app key as the value of content attribute of meta tag.</em></p>
 
 <h2>
-<a name="-------------------" class="anchor" href="#-------------------"><span class="octicon octicon-link"></span></a>-------------------</h2>
+<a name="for-innoz-app" class="anchor" href="#for-innoz-app"><span class="octicon octicon-link"></span></a>For innoz app</h2>
 
-<hr><p>step 1)
-create a file named,bridge.php in your server and
-Put the  code 
-"
-&lt;!doctype html&gt;
-  
-    </p>
-        https://github.com/jinujd/txtweb_innoz_bridge                                                                                     mydomain.com mydomain.com/bridge.php?app=ire) 
+<p>Put the this file in your server</p>
 
 <h2>
-<a name="---------------------------------------------------------------------------------------you-must-complete-step-1-before-this" class="anchor" href="#---------------------------------------------------------------------------------------you-must-complete-step-1-before-this"><span class="octicon octicon-link"></span></a>                                                                                       (You must complete step 1 before this)</h2>
+<a name="steps-common-to-both-platforms" class="anchor" href="#steps-common-to-both-platforms"><span class="octicon octicon-link"></span></a>Steps common to both platforms</h2>
 
-<p>Create an apps.xml file in the  same directory as that of bridge.php(this file)
-Under the root tag named apps,
-1. For txtweb app corresponding to an innoz app ,the tag must start with TxtwebApp_ and the appname must follow
-2. For innoz app corresponding to a txtweb app, the tag must start with InnozApp_ and the  innoz app key must follow
-3.Give the link to the original implementation of the app ,as the value of the tag
-4.For txtweb apps specify the app key as an attribute named key
-5.You can specfiy an additional attribute called prepareURL ,whose value is a url.Before converting the app,
-  the result produced by original implementation of the app will be sent to this url as a GET parameter named 'appStream'.
-  The output produced by this URL will be the ourtput of new app.
-  This is useful when you need to prepare the app output before conversion,like changing txtweb number written in app response to that of innoz platform.
-<em><strong>Sample xml file</strong></em>
- <em><strong>-----------------</strong></em><code>&lt;?xml version="1.0" encoding="ISO-8859-1"?&gt;
+<p>App URL for innoz</p>
+
+<hr><p>: Give the url of bridge.php
+App URL for txtweb: Give the url as url to bridge.php?app= (ex: for app named ire  hosted at
+After URL verification by txtweb,replace bridge.php with ,bridge.php given  at <a href="https://github.com/jinujd/txtweb_innoz_bridge">https://github.com/jinujd/txtweb_innoz_bridge</a>                                                                                     mydomain.com mydomain.com/bridge.php?app=ire) </p>
+
+<ul>
+<li>You must complete step 1 before this</li>
+</ul><p>Create an apps.xml file in the  same directory as that of bridge.php(this file)
+Under the root tag named apps,</p>
+
+<ul>
+<li>1. For txtweb app corresponding to an innoz app ,the tag must start with TxtwebApp_ and the appname must follow</li>
+<li>2. For innoz app corresponding to a txtweb app, the tag must start with InnozApp_ and the  innoz app key must follow</li>
+<li>3.Give the link to the original implementation of the app ,as the value of the tag</li>
+<li>4.For txtweb apps specify the app key as an attribute named key</li>
+<li>
+<p>5.You can specfiy an additional attribute called prepareURL ,whose value is a url.</p>
+
+<hr>
+<p>Before converting the app,
+the result produced by original implementation of the app will be sent to this url as a GET parameter named 'appStream'.</p>
+
+<hr>
+<p>The output produced by this URL will be the output of new app.
+This is useful when you need to prepare the app output before conversion,like changing txtweb number written in app response to that of innoz platform.</p>
+
+<hr>
+</li>
+</ul><h2>
+<a name="sample-xml-file" class="anchor" href="#sample-xml-file"><span class="octicon octicon-link"></span></a>Sample xml file</h2>
+
+<hr><p><code>
+&lt;?xml version="1.0" encoding="ISO-8859-1"?&gt;
 &lt;apps&gt;
-    &lt;TxtwebApp_vote4 prepareURL = 'http://www.myUrl.com.prepare.php' key='3434-34343434-34343434-3434k34'&gt;http://myTxtwebApp1.com/index.php&lt;/TxtwebApp_vote4 &gt;
+&lt;TxtwebApp_vote4 prepareURL = 'http://www.myUrl.com.prepare.php' key='3434-34343434-34343434-3434k34'&gt;http://myTxtwebApp1.com/index.php&lt;/TxtwebApp_vote4 &gt;
     &lt;TxtwebApp_vote4 key='3434-34343434-34343434-3434k34d'&gt;http://myTxtwebApp2.com/index.php&lt;/TxtwebApp_vote4 &gt;
     &lt;InnozApp_dabcdddde6ff0853e8e84ca1845e127a&gt;http://www.myInnozApp1.com/index.php&lt;/InnozApp_dabcdddde6ff0853e8e84ca1845e127a&gt;
     &lt;InnozApp_dabcdddde6ff0853e8e84ca1845e127w prepareURL = 'http://www.myUrl.com.prepare.php' &gt;http://www.myInnozApp2.com/index.php&lt;/InnozApp_dabcdddde6ff0853e8e84ca1845e127w&gt;
 &lt;/apps&gt;</code></p>
 
-<p>NOTE:
-Make sure that 'allow_url_fopen' is set to 'On' in the php.ini of the server where the app is actually implemented  </p>
+<hr><h3>
+<a name="note" class="anchor" href="#note"><span class="octicon octicon-link"></span></a><strong>NOTE:</strong>
+</h3>
+
+<p><em>Make sure that 'allow</em>url_fopen' is set to 'On' in the php.ini of the server where the app is actually implemented  _</p>
       </section>
     </div>
 
